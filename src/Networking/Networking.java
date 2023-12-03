@@ -1,40 +1,38 @@
 package Networking;
 
+import frame.TodoListGUI;
+
 import java.io.*;
-
+import java.net.ServerSocket;
 import java.net.Socket;
-
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Networking implements Runnable{
-    Socket socket = null;
-    BufferedReader in = null;
-    BufferedWriter out = null;
+    ServerSocket serverSocket;
+    Socket socket;
+    BufferedReader in;
+    BufferedWriter out;
+    TodoListGUI app;
+    public Networking(TodoListGUI app){
+        this.app = app;
+    }
 
     @Override
     public void run() {
         try {
-            socket = new Socket("localhost", 8080);
+            serverSocket = new ServerSocket(8000);
+            socket = serverSocket.accept();
             in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             out = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
             while (true){
-                String messageToServer = "update table";
-                out.write(messageToServer);
-                out.newLine();
-                out.flush();
-                Thread.sleep(100);
-                if (messageToServer.equals("exit")){
-                    break;
+                String messageFromClient = in.readLine();
+                if (Objects.equals(messageFromClient, "update table")){
+                    app.refreshTasksView();
                 }
             }
-            socket.close();
-            in.close();
-            out.close();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-
     }
 }

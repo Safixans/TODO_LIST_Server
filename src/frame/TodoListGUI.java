@@ -1,6 +1,7 @@
 package frame;
 
 import controller.CRUController;
+import Networking.Networking;
 import dao.Task;
 import dao.TaskDAO;
 import dao.TaskTableModel;
@@ -20,8 +21,11 @@ public class TodoListGUI extends JFrame{
     private final JButton addButton;
     private final JButton updateButton;
     private final JButton deleteButton;
+    private Thread thread;
 
     public TodoListGUI() {
+        thread = new Thread(new Networking(this));
+        thread.start();
         try {
             taskDAO = new TaskDAO();
         } catch (Exception e) {
@@ -91,7 +95,7 @@ public class TodoListGUI extends JFrame{
     }
 
 
-    private void refreshTasksView() {
+    public void refreshTasksView() {
         try {
             List<Task> tasks = taskDAO.getAllTasks();
             TaskTableModel model = new TaskTableModel(tasks);
@@ -101,6 +105,7 @@ public class TodoListGUI extends JFrame{
             for (int columnIndex = 0; columnIndex < table.getColumnCount(); columnIndex++) {
                 table.getColumnModel().getColumn(columnIndex).setCellRenderer(centerRenderer);
             }
+
 
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, "Error: " + e, "Error", JOptionPane.ERROR_MESSAGE);
@@ -114,6 +119,7 @@ public class TodoListGUI extends JFrame{
         try {
             taskDAO.addTask(new Task(name, status));
             refreshTasksView();
+
 
 
         } catch (Exception e) {
@@ -131,6 +137,7 @@ public class TodoListGUI extends JFrame{
             try {
                 taskDAO.updateTask(new Task(id, name, status));
                 refreshTasksView();
+
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(this, "Error: " + e, "Error", JOptionPane.ERROR_MESSAGE);
             }
@@ -145,6 +152,7 @@ public class TodoListGUI extends JFrame{
             try {
                 taskDAO.deleteTask(id);
                 refreshTasksView();
+
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(this, "Error: " + e, "Error", JOptionPane.ERROR_MESSAGE);
             }
