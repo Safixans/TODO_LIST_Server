@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="374bc5b4-3b70-4818-b825-f51a21249146" name="Changes" comment="Added networking" />
+    <list default="true" id="374bc5b4-3b70-4818-b825-f51a21249146" name="Changes" comment="Added networking">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI_TODO_LIST_Server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GUI_TODO_LIST_Server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/DatabaseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/DatabaseUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frame/TodoListGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frame/TodoListGUI.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +18,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2Z1hGap4Cd47fm1VBEbxcgrsIbk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -35,9 +40,9 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -61,6 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701595399338</updated>
       <workItem from="1701595400521" duration="5817000" />
+      <workItem from="1701601465223" duration="998000" />
     </task>
     <task id="LOCAL-00001" summary="Added networking">
       <option name="closed" value="true" />

@@ -32,7 +32,7 @@ public class TodoListGUI extends JFrame{
             JOptionPane.showMessageDialog(this, "Error: " + e, "Error", JOptionPane.ERROR_MESSAGE);
         }
 
-        setTitle("To-Do List");
+        setTitle("To-Do List[Server]");
         setSize(800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
