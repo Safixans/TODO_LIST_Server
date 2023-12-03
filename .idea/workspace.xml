@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="374bc5b4-3b70-4818-b825-f51a21249146" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI_TODO_LIST_Server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GUI_TODO_LIST_Server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Networking/Networking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Networking/Networking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frame/TodoListGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frame/TodoListGUI.java" afterDir="false" />
-    </list>
+    <list default="true" id="374bc5b4-3b70-4818-b825-f51a21249146" name="Changes" comment="Added networking" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +41,17 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-20" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="GUI_TODO_LIST_Server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -55,8 +60,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701595399338</updated>
-      <workItem from="1701595400521" duration="5476000" />
+      <workItem from="1701595400521" duration="5817000" />
     </task>
+    <task id="LOCAL-00001" summary="Added networking">
+      <option name="closed" value="true" />
+      <created>1701601031352</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701601031352</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -64,5 +78,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Added networking" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added networking" />
   </component>
 </project>
